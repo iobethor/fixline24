@@ -30,7 +30,7 @@ npm start        # http://localhost:3000
 
 ## Где хранятся правки
 
-На Render (у бесплатного тарифа нет постоянного диска) правки, загруженные файлы и заявки сохраняются в ветку `storage` этого же GitHub-репозитория. Для этого на Render заданы `GITHUB_TOKEN` (права Contents: read/write на репозиторий), `GITHUB_REPO` (`owner/name`) и, по желанию, `GITHUB_STORAGE_BRANCH` (по умолчанию `storage`). Ветку `storage` не удаляйте.
+На Render (у бесплатного тарифа нет постоянного диска) правки, загруженные файлы и заявки сохраняются в отдельный приватный репозиторий `iobethor/fixline24-data`, в нём есть телефоны клиентов, поэтому не делайте его публичным. На Render для этого заданы `GITHUB_TOKEN` (права Contents: read/write на этот репозиторий), `GITHUB_REPO=iobethor/fixline24-data` и `GITHUB_STORAGE_BRANCH=main`.
 
 - `content/*.json` — исходный контент, лежит в git.
 - Правки из админки, загруженные файлы и заявки на Replit хранятся в Replit Database. Они переживают перезапуск и передеплой. Локально всё это лежит в папке `storage/`, она в git не попадает.

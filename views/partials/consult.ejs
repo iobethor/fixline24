@@ -1,0 +1,15 @@
+<section class="section consult" id="consult">
+  <div class="container">
+    <div class="consult__card">
+      <div class="consult__text">
+        <p class="eyebrow eyebrow--light"><%= pages.consult.eyebrow %></p>
+        <h2 class="h2"><%= pages.consult.title %></h2>
+        <p class="lead"><%= fill(pages.consult.lead) %></p>
+        <ul class="consult__list">
+          <% (pages.consult.points || []).forEach(function (pt) { %><li><b><%= pt.value %></b><span><%= pt.label %></span></li><% }) %>
+        </ul>
+      </div>
+      <%- include('lead-form', { source: typeof source !== 'undefined' ? source : 'Бесплатная консультация' }) %>
+    </div>
+  </div>
+</section>

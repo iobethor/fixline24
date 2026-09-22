@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [['Услуги']] }) %>
+    <h1 class="page-title">Услуги</h1>
+    <p class="page-lead">Сервисное обслуживание, монтаж, диагностика и ремонт ИТ и интерактивного оборудования по всей России.</p>
+  </div>
+</section>
+
+<% categories.forEach(function (cat, k) { %>
+<section class="section section--tight">
+  <div class="container">
+    <p class="eyebrow">0<%= k + 1 %></p>
+    <h2 class="h2"><a href="/<%= cat.slug %>/"><%= cat.title %> →</a></h2>
+    <div class="svc-grid">
+      <% cat.items.forEach(function (i, n) { %>
+        <a class="svc-card" href="/<%= cat.slug %>/<%= i.slug %>/">
+          <span class="svc-card__img"><img src="<%= i.img %>" alt="<%= i.title %>" loading="lazy"></span>
+          <span class="svc-card__body"><small><%= String(n + 1).padStart(2, '0') %></small><span><%= i.menu %></span><i>→</i></span>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% }) %>
+
+<%- include('partials/consult', { source: 'Услуги' }) %>
+<%- include('partials/footer') %>

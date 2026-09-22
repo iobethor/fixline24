@@ -1,0 +1,60 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [[product.home.section.title, '/' + product.home.section.slug + '/'], [product.home.cat.title, product.home.cat.href], [product.title]] }) %>
+    <h1 class="page-title"><%= product.title %></h1>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container product">
+    <div class="product__gallery" data-gallery>
+      <div class="product__main"><% if (product.images[0]) { %><img src="<%= product.images[0] %>" alt="<%= product.title %>" data-gallery-main><% } %></div>
+      <% if (product.images.length > 1) { %>
+        <div class="product__thumbs">
+          <% product.images.forEach(function (src, i) { %>
+            <button class="product__thumb<%= i === 0 ? ' is-active' : '' %>" data-gallery-thumb="<%= src %>" aria-label="Фото <%= i + 1 %>"><img src="<%= src %>" alt=""></button>
+          <% }) %>
+        </div>
+      <% } %>
+    </div>
+    <div class="product__info">
+      <p class="eyebrow"><%= product.home.cat.title %></p>
+      <p class="product__price"><%= product.price || pages.productPage.price %></p>
+      <% if (product.text) { %><p><%= product.text %></p><% } %>
+      <ul class="dots">
+        <% (pages.productPage.points || []).forEach(function (pt) { %><li><%= pt %></li><% }) %>
+      </ul>
+      <div class="desc__btns">
+        <button class="btn btn--acc" data-modal-open="lead" data-product="<%= product.title %>">Запросить цену →</button>
+        <button class="btn btn--line" data-modal-open="lead" data-product="Установка: <%= product.title %>">Заказать с установкой</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% if (product.attrs.length) { %>
+<section class="section section--tight">
+  <div class="container">
+    <h2 class="h3">Характеристики</h2>
+    <table class="table table--specs">
+      <% product.attrs.forEach(function (a) { %><tr><th><%= a[0] %></th><td><%= a[1] %></td></tr><% }) %>
+    </table>
+  </div>
+</section>
+<% } %>
+
+<% if (related.length) { %>
+<section class="section section--tight">
+  <div class="container">
+    <h2 class="h3">Ещё в категории «<%= product.home.cat.title %>»</h2>
+    <div class="part-grid">
+      <% related.forEach(function (p) { %><%- include('partials/product-card', { p: p }) %><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<%- include('partials/consult', { source: product.title }) %>
+<%- include('partials/footer') %>

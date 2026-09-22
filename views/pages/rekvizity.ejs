@@ -1,0 +1,12 @@
+<%- include('_top') %>
+<section class="section section--tight">
+  <div class="container text">
+    <table class="table">
+      <% (page.rows || []).forEach(function (r) { %><tr><th><%= r[0] %></th><td><%= fill(r[1]) %></td></tr><% }) %>
+      <% if (site.address) { %><tr><th>Фактический адрес</th><td><%= site.address %></td></tr><% } %>
+      <tr><th>Телефон</th><td><%= site.phone %></td></tr>
+      <tr><th>E-mail</th><td><%= site.email %></td></tr>
+    </table>
+  </div>
+</section>
+<%- include('../partials/footer') %>

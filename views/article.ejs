@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [['Новости и статьи', '/novosti/'], [article.title]] }) %>
+    <p class="eyebrow"><%= formatDate(article.date) %></p>
+    <h1 class="page-title"><%= article.title %></h1>
+    <p class="page-lead"><%= article.excerpt %></p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container article">
+    <div class="article__cover"><img src="<%= article.img %>" alt="<%= article.title %>"></div>
+    <div class="text">
+      <%- include('partials/blocks', { body: article.body }) %>
+      <div class="desc__btns">
+        <button class="btn btn--acc" data-modal-open="lead">Вызвать инженера →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <h2 class="h3">Читайте также</h2>
+    <div class="cards3">
+      <% others.forEach(function (n) { %><%- include('partials/news-card', { n: n }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

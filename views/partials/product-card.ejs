@@ -1,0 +1,6 @@
+<div class="part-card part-card--product">
+  <a class="part-card__img" href="<%= p.href %>"><% if (p.images[0]) { %><img src="<%= p.images[0] %>" alt="<%= p.title %>" loading="lazy"><% } %></a>
+  <a class="part-card__name" href="<%= p.href %>"><%= p.title %></a>
+  <span class="part-card__price"><%= p.price || pages.productPage.price %></span>
+  <button class="btn btn--line btn--sm" data-modal-open="lead" data-product="<%= p.title %>">Запросить цену</button>
+</div>

@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [['Портфолио', '/portfolio/'], [project.client]] }) %>
+    <h1 class="page-title"><%= project.title %></h1>
+    <div class="chips">
+      <span class="chip chip--static">📍 <%= project.place %></span>
+      <% project.tags.forEach(function (t) { %><span class="chip chip--static"><%= t %></span><% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container project">
+    <div class="project__img"><img src="<%= project.img %>" alt="<%= project.title %>"></div>
+    <div class="project__info">
+      <dl class="project__meta">
+        <div><dt>Заказчик</dt><dd><%= project.client %></dd></div>
+        <div><dt>География</dt><dd><%= project.place %></dd></div>
+      </dl>
+      <h2 class="h3">Задача</h2>
+      <p><%= project.task %></p>
+      <h2 class="h3">Что сделали</h2>
+      <ul class="dots">
+        <% project.done.forEach(function (d) { %><li><%= d %></li><% }) %>
+      </ul>
+      <div class="desc__btns">
+        <button class="btn btn--grad" data-modal-open="lead">Хочу так же</button>
+        <a class="btn btn--outline" href="<%= project.service %>">Об услуге</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <h2 class="h2">Другие проекты</h2>
+    <div class="cards3">
+      <% others.forEach(function (p) { %><%- include('partials/project-card', { p: p }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/consult', { source: project.title }) %>
+<%- include('partials/footer') %>

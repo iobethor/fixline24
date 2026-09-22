@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [['Новости и статьи']] }) %>
+    <h1 class="page-title">Новости и статьи</h1>
+    <p class="page-lead">Разбираем типовые поломки, делимся регламентами и рассказываем о проектах.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cards3">
+      <% news.forEach(function (n) { %><%- include('partials/news-card', { n: n }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/consult', { source: 'Новости' }) %>
+<%- include('partials/footer') %>

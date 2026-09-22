@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [[sec.title, '/' + sec.slug + '/'], [cat.title]] }) %>
+    <h1 class="page-title"><%= cat.title %></h1>
+    <p class="page-lead"><%= cat.lead %></p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="chips chips--nav">
+      <% sec.cats.forEach(function (c) { %>
+        <a class="chip<%= c === cat ? ' is-active' : '' %>" href="<%= c.href %>"><%= c.title %> <small><%= c.items.length %></small></a>
+      <% }) %>
+    </div>
+    <div class="part-grid mt">
+      <% cat.items.forEach(function (p) { %><%- include('partials/product-card', { p: p }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/consult', { source: cat.title }) %>
+<%- include('partials/footer') %>

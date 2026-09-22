@@ -1,0 +1,6 @@
+<% (body || []).forEach(function (b) { %>
+  <% if (typeof b === 'string') { %><p><%= fill(b) %></p>
+  <% } else if (b && b.h) { %><h2 class="h3"><%= fill(b.h) %></h2>
+  <% } else if (b && b.list) { %><ul class="dots"><% b.list.forEach(function (li) { %><li><%= fill(li) %></li><% }) %></ul>
+  <% } else if (b && b.img) { %><img class="text__img" src="<%= b.img %>" alt="<%= b.alt || '' %>" loading="lazy"><% } %>
+<% }) %>

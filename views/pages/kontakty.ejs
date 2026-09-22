@@ -1,0 +1,19 @@
+<%- include('_top') %>
+<section class="section section--tight">
+  <div class="container contacts<%= site.address ? '' : ' contacts--single' %>">
+    <div class="contacts__list">
+      <div><p class="footer__label">Телефон</p><a class="contacts__big" href="<%= site.phoneHref %>"><%= site.phone %></a></div>
+      <div><p class="footer__label">E-mail</p><a class="contacts__big" href="mailto:<%= site.email %>"><%= site.email %></a></div>
+      <div><p class="footer__label">Мессенджер MAX</p><a class="max-link" href="<%= site.max.href %>" target="_blank" rel="noopener"><%- include('../partials/max') %><span><%= site.max.phone %></span></a></div>
+      <% if (site.address) { %><div><p class="footer__label">Адрес</p><p class="contacts__big"><%= site.address %></p></div><% } %>
+      <div><p class="footer__label">График работы</p><% site.schedule.forEach(function (s) { %><p><%= s %></p><% }) %></div>
+    </div>
+    <% if (site.address) { %>
+      <div class="contacts__map">
+        <iframe title="Карта" src="https://yandex.ru/map-widget/v1/?text=<%= encodeURIComponent(site.address) %>&z=15" loading="lazy" allowfullscreen></iframe>
+      </div>
+    <% } %>
+  </div>
+</section>
+<%- include('../partials/consult', { source: 'Контакты' }) %>
+<%- include('../partials/footer') %>

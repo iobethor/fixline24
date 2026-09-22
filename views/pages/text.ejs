@@ -1,0 +1,9 @@
+<%- include('_top') %>
+<section class="section section--tight">
+  <div class="container text">
+    <%- include('../partials/blocks', { body: page.body }) %>
+  </div>
+</section>
+<% if (slug === 'o-kompanii') { %><%- include('../partials/counters', { counters: counters }) %><% } %>
+<% if (slug === 'o-kompanii' || slug === 'sotrudnichestvo') { %><%- include('../partials/consult', { source: title }) %><% } %>
+<%- include('../partials/footer') %>

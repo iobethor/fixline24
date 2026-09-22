@@ -1,0 +1,23 @@
+<section class="counters" data-counters>
+  <canvas class="counters__bg" data-plexus aria-hidden="true"></canvas>
+  <div class="container counters__inner">
+    <% var cb = typeof block !== 'undefined' && block ? block : { eyebrow: 'Сервисная сеть', title: '{{name}} в цифрах' }; %>
+    <p class="eyebrow"><%= cb.eyebrow %></p>
+    <h2 class="h2"><%= fill(cb.title) %></h2>
+    <div class="counters__grid">
+      <% counters.forEach(function (c) { %>
+        <div class="counter">
+          <div class="counter__value">
+            <% if (c.prefix) { %><span class="counter__prefix"><%= c.prefix %></span><% } %>
+            <% if (c.value != null && c.value !== '' && !isNaN(c.value)) { %>
+              <span class="counter__num" data-count="<%= Number(c.value) %>"><%= Number(c.value).toLocaleString('ru-RU') %></span>
+            <% } else { %>
+              <span class="counter__num"><%= c.text %></span>
+            <% } %>
+          </div>
+          <p class="counter__label"><%= c.label %></p>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>

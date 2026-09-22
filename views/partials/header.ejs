@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= meta.title ? (path === '/' ? meta.title : meta.title + ' — ' + site.name) : site.name %></title>
+  <meta name="description" content="<%= meta.description %>">
+  <meta property="og:title" content="<%= meta.title || site.name %>">
+  <meta property="og:description" content="<%= meta.description %>">
+  <meta name="theme-color" content="#0b1321">
+  <link rel="icon" href="<%= site.favicon || '/img/favicon.svg' %>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=<%= v %>">
+</head>
+<body>
+<div class="topbar">
+  <div class="container topbar__row">
+    <span class="topbar__status"><i class="pulse"></i> <%= pages.topbarStatus %></span>
+    <span class="topbar__links">
+      <a class="topbar__phone" href="<%= site.phoneHref %>"><%= site.phone %></a>
+      <a href="mailto:<%= site.email %>"><%= site.email %></a>
+      <a href="/kontakty/">Контакты</a>
+      <a href="/portfolio/">Проекты</a>
+    </span>
+  </div>
+</div>
+<header class="header" id="top">
+  <div class="container header__row">
+    <a href="/" class="logo" aria-label="<%= site.name %> — на главную"><%- include('logo') %></a>
+
+    <nav class="nav" data-nav aria-label="Основное меню">
+      <ul class="nav__list">
+        <% nav.services.forEach(function (cat) { %>
+          <li class="nav__item has-drop">
+            <a class="nav__link<%= path.indexOf('/' + cat.slug + '/') === 0 ? ' is-active' : '' %>" href="/<%= cat.slug %>/"><%= cat.short %></a>
+            <button class="nav__toggle" aria-label="Открыть подменю"></button>
+            <div class="drop">
+              <p class="drop__title"><%= cat.title %></p>
+              <% cat.menuItems.forEach(function (i) { %>
+                <a href="/<%= cat.slug %>/<%= i.slug %>/"><%- include('icon', { name: i.icon }) %><span><%= i.menu %></span></a>
+              <% }) %>
+              <a class="drop__more" href="/<%= cat.slug %>/">Ещё! Все направления →</a>
+            </div>
+          </li>
+        <% }) %>
+        <% [nav.components, nav.spareParts].forEach(function (sec) { %>
+          <li class="nav__item has-drop">
+            <a class="nav__link<%= path.indexOf('/' + sec.slug + '/') === 0 ? ' is-active' : '' %>" href="/<%= sec.slug %>/"><%= sec.title %></a>
+            <button class="nav__toggle" aria-label="Открыть подменю"></button>
+            <div class="drop">
+              <p class="drop__title"><%= sec.title %></p>
+              <% sec.cats.forEach(function (c) { %>
+                <a href="<%= c.href %>"><span><%= c.title %></span><em><%= c.items.length %></em></a>
+              <% }) %>
+            </div>
+          </li>
+        <% }) %>
+        <li class="nav__item">
+          <a class="nav__link<%= path.indexOf('/portfolio/') === 0 ? ' is-active' : '' %>" href="/portfolio/">Портфолио</a>
+        </li>
+      </ul>
+      <div class="nav__mobile-contacts">
+        <a href="<%= site.phoneHref %>"><%= site.phone %></a>
+        <a href="mailto:<%= site.email %>"><%= site.email %></a>
+        <button class="btn btn--acc" data-modal-open="lead">Оставить заявку</button>
+      </div>
+    </nav>
+
+    <div class="header__actions">
+      <a class="max-link" href="<%= site.max.href %>" target="_blank" rel="noopener" title="Написать в MAX" aria-label="Написать в MAX"><%- include('max') %></a>
+      <button class="btn btn--acc btn--sm header__cta" data-modal-open="lead">Заявка</button>
+      <button class="burger" aria-label="Меню" aria-expanded="false" data-burger><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main>

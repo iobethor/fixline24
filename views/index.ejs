@@ -1,0 +1,200 @@
+<%- include('partials/header') %>
+
+<section class="hero">
+  <% if (site.heroVideo && site.heroVideo.src) { %>
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="<%= site.heroVideo.poster || '' %>">
+      <source src="<%= site.heroVideo.src %>" type="video/mp4">
+    </video>
+  <% } else { %>
+    <canvas class="hero__canvas" data-network aria-hidden="true"></canvas>
+  <% } %>
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <p class="eyebrow eyebrow--light"><i class="pulse"></i> <%= home.hero.eyebrow %></p>
+      <h1 class="hero__title"><%= home.hero.title %> <em><%= home.hero.titleAccent %></em> <%= home.hero.titleEnd %></h1>
+      <p class="hero__lead"><%= home.hero.lead %></p>
+      <div class="hero__btns">
+        <button class="btn btn--acc" data-modal-open="lead"><%= home.hero.buttonMain %> <span aria-hidden="true">→</span></button>
+        <a class="btn btn--line" href="/uslugi/"><%= home.hero.buttonSecond %></a>
+      </div>
+    </div>
+    <div class="hero__panel" aria-label="Ключевые показатели">
+      <% (home.hero.stats || []).forEach(function (st) { %>
+        <div class="hero__stat"><b><%= st.value %></b><span><%= st.label %></span></div>
+      <% }) %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="hero__dirs">
+      <% nav.services.forEach(function (cat, n) { %>
+        <a class="hero__dir" href="/<%= cat.slug %>/"><small>0<%= n + 1 %></small><span><%= cat.title %></span><i>→</i></a>
+      <% }) %>
+      <a class="hero__dir" href="/portfolio/"><small>04</small><span>Портфолио</span><i>→</i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow"><%= home.sections.components.eyebrow %></p>
+        <h2 class="h2"><%= home.sections.components.title %></h2>
+      </div>
+      <div class="arrows" data-slider-arrows="components">
+        <button class="arrow arrow--prev" data-dir="-1" aria-label="Назад"></button>
+        <button class="arrow arrow--next" data-dir="1" aria-label="Вперёд"></button>
+      </div>
+    </div>
+    <div class="slider" data-slider="components">
+      <% components.forEach(function (c) { %>
+        <a class="part-card" href="<%= c.href %>">
+          <span class="part-card__img"><% if (c.img) { %><img src="<%= c.img %>" alt="<%= c.title %>" loading="lazy"><% } %></span>
+          <span class="part-card__name"><%= c.title %></span>
+          <span class="part-card__link"><%= c.items.length %> товаров →</span>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark popular">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow eyebrow--light"><%= home.sections.popular.eyebrow %></p>
+        <h2 class="h2"><%= home.sections.popular.title %></h2>
+      </div>
+      <div class="arrows arrows--light" data-slider-arrows="popular">
+        <button class="arrow arrow--prev" data-dir="-1" aria-label="Назад"></button>
+        <button class="arrow arrow--next" data-dir="1" aria-label="Вперёд"></button>
+      </div>
+    </div>
+    <div class="slider slider--pop" data-slider="popular">
+      <% popular.forEach(function (p) { %>
+        <a class="pop-card" href="<%= p.href %>">
+          <span class="pop-card__img"><img src="<%= p.img %>" alt="<%= p.kind %> <%= p.name %>" loading="lazy"></span>
+          <span class="pop-card__kind"><%= p.kind %></span>
+          <span class="pop-card__name"><%= p.name %></span>
+          <span class="pop-card__go">Подробнее →</span>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow"><%= home.sections.portfolio.eyebrow %></p>
+        <h2 class="h2"><%= home.sections.portfolio.title %></h2>
+      </div>
+      <a class="btn btn--line btn--sm" href="/portfolio/">Все проекты →</a>
+    </div>
+    <div class="tiles">
+      <% projects.slice(0, 7).forEach(function (p, n) { %>
+        <a class="tile<%= n === 0 ? ' tile--big' : '' %>" href="/portfolio/<%= p.slug %>/">
+          <span class="tile__img"><img src="<%= p.img %>" alt="<%= p.title %>" loading="lazy"></span>
+          <span class="tile__cap">
+            <small><%= p.place %></small>
+            <span><%= p.client %></span>
+          </span>
+        </a>
+      <% }) %>
+      <a class="tile tile--all" href="/portfolio/">
+        <span class="tile__all-num"><%= projects.length %></span>
+        <span class="tile__all-text">Смотрите всё →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow"><%= home.sections.software.eyebrow %></p>
+    <h2 class="h2"><%= home.sections.software.title %></h2>
+    <div class="soft">
+      <% software.forEach(function (s) { %>
+        <div class="soft__item">
+          <div class="soft__mock soft__mock--<%= s.mock %>" aria-hidden="true">
+            <% if (s.mock === 'monitor') { %>
+              <div class="mock-row"><i class="ok"></i><span></span><em>online</em></div>
+              <div class="mock-row"><i class="ok"></i><span></span><em>online</em></div>
+              <div class="mock-row"><i class="warn"></i><span></span><em>47°C</em></div>
+              <div class="mock-row"><i class="ok"></i><span></span><em>online</em></div>
+            <% } else if (s.mock === 'desk') { %>
+              <div class="mock-kanban"><div><b></b><b></b></div><div><b></b></div><div><b></b><b></b><b></b></div></div>
+            <% } else { %>
+              <div class="mock-kiosk"><div class="mock-kiosk__scr"><b></b><span></span><span></span><i></i></div></div>
+            <% } %>
+          </div>
+          <h3 class="soft__title"><%= s.title %></h3>
+          <p class="soft__text"><%= s.text %></p>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow"><%= home.sections.clients.eyebrow %></p>
+    <h2 class="h2"><%= home.sections.clients.title %></h2>
+    <div class="clients">
+      <% clients.forEach(function (c) { %>
+        <div class="client" title="<%= c.name %>">
+          <% if (c.logo) { %><img src="<%= c.logo %>" alt="<%= c.name %>" loading="lazy"><% } else { %><span class="client__word"><%= c.name %></span><% } %>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<% if (reviews.length) { %>
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow"><%= home.sections.reviews.eyebrow %></p>
+        <h2 class="h2"><%= home.sections.reviews.title %></h2>
+      </div>
+      <div class="arrows" data-slider-arrows="reviews">
+        <button class="arrow arrow--prev" data-dir="-1" aria-label="Назад"></button>
+        <button class="arrow arrow--next" data-dir="1" aria-label="Вперёд"></button>
+      </div>
+    </div>
+    <div class="slider slider--reviews" data-slider="reviews">
+      <% reviews.forEach(function (r) { %>
+        <article class="review">
+          <p class="review__text"><%= r.text %></p>
+          <p class="review__name"><%= r.name %></p>
+          <p class="review__role"><%= r.role %></p>
+        </article>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<%- include('partials/counters', { counters: counters, block: home.sections.counters }) %>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow"><%= home.sections.news.eyebrow %></p>
+        <h2 class="h2"><%= home.sections.news.title %></h2>
+      </div>
+      <a class="btn btn--line btn--sm" href="/novosti/">Больше новостей →</a>
+    </div>
+    <div class="cards3">
+      <% news.slice(0, 3).forEach(function (n) { %><%- include('partials/news-card', { n: n }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/consult', { source: 'Главная — бесплатная консультация' }) %>
+
+<%- include('partials/footer') %>

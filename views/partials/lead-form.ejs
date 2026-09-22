@@ -1,0 +1,21 @@
+<form class="lead-form" data-lead-form novalidate>
+  <input type="hidden" name="source" value="<%= source %>">
+  <label class="field">
+    <span>Имя</span>
+    <input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name">
+  </label>
+  <label class="field">
+    <span>Телефон *</span>
+    <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" autocomplete="tel" required>
+  </label>
+  <label class="field">
+    <span>Комментарий</span>
+    <textarea name="comment" rows="3" placeholder="Тип оборудования, адрес, что случилось"></textarea>
+  </label>
+  <label class="check">
+    <input type="checkbox" name="agree" required>
+    <span>Принимаю <a href="/politika-konfidencialnosti/" target="_blank">политику обработки персональных данных</a></span>
+  </label>
+  <button class="btn btn--acc btn--block" type="submit">Отправить заявку <span aria-hidden="true">→</span></button>
+  <p class="lead-form__status" data-status role="status"></p>
+</form>

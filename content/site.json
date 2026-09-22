@@ -1,0 +1,74 @@
+{
+  "name": "FIXLINE 24",
+  "brand": {
+    "main": "FIX",
+    "accent": "LINE",
+    "suffix": "24"
+  },
+  "brandSub": "сервисная служба",
+  "logo": "",
+  "logoWithText": false,
+  "favicon": "",
+  "tagline": "Сервисная служба для ИТ и интерактивного оборудования по всей России",
+  "phone": "+7 980 391-09-91",
+  "email": "sales@super-fast.ru",
+  "address": "",
+  "schedule": [
+    "Сервис — круглосуточно",
+    "Обработка заявок ПН–ПТ с 09:00 до 18:00 по Мск"
+  ],
+  "max": {
+    "phone": "+7 980 391-09-91",
+    "href": "https://max.ru/+79803910991"
+  },
+  "copyright": "© 2024–2026 Все права защищены",
+  "heroVideo": {
+    "src": "",
+    "poster": ""
+  },
+  "counterStart": "2026-09-21",
+  "counters": [
+    {
+      "prefix": "",
+      "value": 602,
+      "text": "",
+      "label": "точки присутствия",
+      "grows": false
+    },
+    {
+      "prefix": "",
+      "value": 22740,
+      "text": "",
+      "label": "отремонтированных устройств",
+      "grows": true
+    },
+    {
+      "prefix": "более",
+      "value": 2200,
+      "text": "",
+      "label": "сервисных инженеров",
+      "grows": true
+    },
+    {
+      "prefix": "более",
+      "value": 1000,
+      "text": "",
+      "label": "обслуживаемых объектов",
+      "grows": true
+    },
+    {
+      "prefix": "",
+      "value": "",
+      "text": "Все",
+      "label": "регионы России на обслуживании",
+      "grows": false
+    },
+    {
+      "prefix": "более",
+      "value": 100,
+      "text": "",
+      "label": "заявок выполняем ежедневно",
+      "grows": true
+    }
+  ]
+}

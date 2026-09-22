@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [['Портфолио']] }) %>
+    <h1 class="page-title">Портфолио</h1>
+    <p class="page-lead">Проекты по обслуживанию, модернизации и ремонту оборудования для бизнеса и государственных заказчиков.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cards3">
+      <% projects.forEach(function (p) { %><%- include('partials/project-card', { p: p }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/consult', { source: 'Портфолио' }) %>
+<%- include('partials/footer') %>

@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [['Карта сайта']] }) %>
+    <h1 class="page-title">Карта сайта</h1>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container sitemap">
+    <div>
+      <h3 class="h3"><a href="/">Главная</a></h3>
+      <ul>
+        <li><a href="/uslugi/">Услуги</a></li>
+        <li><a href="/novosti/">Новости и статьи</a></li>
+        <% pageLinks.forEach(function (l) { %><li><a href="/<%= l[0] %>/"><%= l[1] %></a></li><% }) %>
+      </ul>
+    </div>
+    <% categories.forEach(function (cat) { %>
+      <div>
+        <h3 class="h3"><a href="/<%= cat.slug %>/"><%= cat.title %></a></h3>
+        <ul><% cat.items.forEach(function (i) { %><li><a href="/<%= cat.slug %>/<%= i.slug %>/"><%= i.menu %></a></li><% }) %></ul>
+      </div>
+    <% }) %>
+    <% Object.values(sections).forEach(function (sec) { %>
+      <div>
+        <h3 class="h3"><a href="/<%= sec.slug %>/"><%= sec.title %></a></h3>
+        <ul><% sec.cats.forEach(function (c) { %><li><a href="<%= c.href %>"><%= c.title %></a></li><% }) %></ul>
+      </div>
+    <% }) %>
+    <div>
+      <h3 class="h3"><a href="/novosti/">Новости и статьи</a></h3>
+      <ul><% articles.forEach(function (a) { %><li><a href="/novosti/<%= a.slug %>/"><%= a.title %></a></li><% }) %></ul>
+    </div>
+    <div>
+      <h3 class="h3"><a href="/portfolio/">Портфолио</a></h3>
+      <ul><% projects.forEach(function (p) { %><li><a href="/portfolio/<%= p.slug %>/"><%= p.client %> — <%= p.place %></a></li><% }) %></ul>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

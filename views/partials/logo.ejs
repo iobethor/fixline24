@@ -1,0 +1,14 @@
+<% if (site.logo) { %>
+  <img class="logo__img" src="<%= site.logo %>" alt="<%= site.name %>">
+<% } else { %>
+<svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+  <rect width="40" height="40" rx="8" fill="var(--logo-tile)"/>
+  <path d="M7 22h7l3-8 5 15 3-9 2 2h6" fill="none" stroke="var(--acc)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<% } %>
+<% if (!site.logo || site.logoWithText) { %>
+<span class="logo__text">
+  <span class="logo__name"><%= site.brand.main %><b><%= site.brand.accent %></b><sup><%= site.brand.suffix %></sup></span>
+  <span class="logo__sub"><%= site.brandSub || 'сервисная служба' %></span>
+</span>
+<% } %>

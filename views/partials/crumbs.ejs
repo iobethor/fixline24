@@ -1,0 +1,6 @@
+<nav class="crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a>
+  <% items.forEach(function (c) { %>
+    <span>/</span><% if (c[1]) { %><a href="<%= c[1] %>"><%= c[0] %></a><% } else { %><span class="crumbs__current"><%= c[0] %></span><% } %>
+  <% }) %>
+</nav>

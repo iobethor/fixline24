@@ -1,0 +1,89 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <%- include('partials/crumbs', { items: [[cat.title, '/' + cat.slug + '/'], [item.menu]] }) %>
+    <h1 class="page-title"><%= item.title %></h1>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container desc">
+    <div class="desc__media">
+      <img src="<%= item.img %>" alt="<%= item.title %>">
+      <span class="desc__tag"><%= cat.title %></span>
+    </div>
+    <div class="desc__text">
+      <p class="lead"><%= item.intro %></p>
+      <p><%= fill(pages.servicePage.text) %></p>
+      <div class="desc__btns">
+        <button class="btn btn--acc" data-modal-open="lead">Рассчитать стоимость →</button>
+        <a class="btn btn--line" href="<%= site.phoneHref %>"><%= site.phone %></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <ul class="checks">
+      <% (pages.servicePage.checks || []).forEach(function (c) { %><li><%= c %></li><% }) %>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <p class="eyebrow">Состав работ</p>
+    <h2 class="h2">Что входит в услугу</h2>
+    <ol class="works">
+      <% item.works.forEach(function (w, n) { %>
+        <li class="works__item"><span class="works__num"><%= String(n + 1).padStart(2, '0') %></span><span><%= w %></span></li>
+      <% }) %>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta">
+      <p><%= pages.servicePage.cta %></p>
+      <button class="btn btn--acc" data-modal-open="lead">Запросить коммерческое предложение →</button>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <p class="eyebrow">Процесс</p>
+    <h2 class="h2">Как мы работаем</h2>
+    <div class="steps">
+      <% (pages.servicePage.steps || []).forEach(function (st, n) { %><div class="step"><b><%= String(n + 1).padStart(2, '0') %></b><p><%= st %></p></div><% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <p class="eyebrow">Кейсы</p>
+    <h2 class="h2">Реализованные проекты</h2>
+    <div class="cards3">
+      <% related.forEach(function (p) { %><%- include('partials/project-card', { p: p }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <h2 class="h3">Другие направления раздела «<%= cat.title %>»</h2>
+    <div class="chips">
+      <% cat.items.filter(function (i) { return i !== item }).forEach(function (i) { %>
+        <a class="chip" href="/<%= cat.slug %>/<%= i.slug %>/"><%= i.menu %></a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/consult', { source: item.title }) %>
+
+<%- include('partials/footer') %>

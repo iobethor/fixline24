@@ -1,0 +1,80 @@
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="/" class="logo logo--light"><%- include('logo') %></a>
+        <p class="footer__about"><%= site.tagline %>.</p>
+        <div class="footer__legal">
+          <a href="/politika-konfidencialnosti/">Политика конфиденциальности</a>
+          <a href="/dogovor-oferty/">Договор оферты</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Клиентам</h4>
+        <a href="/kontakty/">Контакты</a>
+        <a href="/komplektuyushchie/">Комплектующие</a>
+        <a href="/novosti/">Новости</a>
+        <a href="/o-kompanii/">О компании</a>
+      </div>
+      <div class="footer__col">
+        <h4>О компании</h4>
+        <a href="/portfolio/">Проекты</a>
+        <a href="/rekvizity/">Реквизиты</a>
+        <a href="/karta-sayta/">Карта сайта</a>
+        <a href="/uslugi/">Услуги</a>
+        <a href="/sotrudnichestvo/">Сотрудничество</a>
+      </div>
+    </div>
+
+    <div class="footer__info">
+      <div>
+        <p class="footer__label">График работы</p>
+        <ul class="footer__schedule">
+          <% site.schedule.forEach(function (s) { %><li><%= s %></li><% }) %>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__label">Телефон</p>
+        <a class="footer__big" href="<%= site.phoneHref %>"><%= site.phone %></a>
+      </div>
+      <div>
+        <p class="footer__label">E-mail</p>
+        <a class="footer__big" href="mailto:<%= site.email %>"><%= site.email %></a>
+      </div>
+      <div>
+        <p class="footer__label">Мессенджер</p>
+        <a class="max-link max-link--footer" href="<%= site.max.href %>" target="_blank" rel="noopener"><%- include('max') %><span>Написать в MAX</span></a>
+      </div>
+    </div>
+    <% if (site.address) { %>
+      <div class="footer__address">
+        <p class="footer__label">Адрес</p>
+        <p class="footer__big"><%= site.address %></p>
+      </div>
+    <% } %>
+    <div class="footer__bottom">
+      <span><%= site.copyright %></span>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" data-modal="lead" aria-hidden="true">
+  <div class="modal__overlay" data-modal-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal__close" data-modal-close aria-label="Закрыть">×</button>
+    <p class="eyebrow">Заявка</p>
+    <h3 class="h3" id="modal-title">Опишите задачу — перезвоним</h3>
+    <%- include('lead-form', { source: 'Модальное окно' }) %>
+  </div>
+</div>
+
+<div class="cookie" data-cookie hidden>
+  <p>Мы используем cookie, чтобы сайт работал лучше. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="/politika-konfidencialnosti/">политикой конфиденциальности</a>.</p>
+  <button class="btn btn--acc btn--sm" data-cookie-ok>Принять</button>
+</div>
+
+<script src="/js/main.js?v=<%= v %>" defer></script>
+</body>
+</html>

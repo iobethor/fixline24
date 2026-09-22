@@ -1,0 +1,8 @@
+<a class="news-card" href="/novosti/<%= n.slug %>/">
+  <span class="news-card__cover"><img src="<%= n.img %>" alt="<%= n.title %>" loading="lazy"></span>
+  <span class="news-card__body">
+    <span class="news-card__date"><%= formatDate(n.date) %></span>
+    <span class="news-card__title"><%= n.title %></span>
+    <span class="news-card__text"><%= n.excerpt %></span>
+  </span>
+</a>

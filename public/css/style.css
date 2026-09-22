@@ -612,3 +612,15 @@ a.chip:hover { border-color: var(--ink); background: var(--ink); color: #fff; }
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
   .counter, .reveal { opacity: 1; transform: none; }
 }
+
+/* очень узкие экраны (iPhone SE и уже) */
+@media (max-width: 420px) {
+  .hero__title { font-size: clamp(24px, 8.4vw, 34px); overflow-wrap: anywhere; hyphens: auto; }
+  .page-title { font-size: clamp(24px, 7.6vw, 30px); overflow-wrap: anywhere; hyphens: auto; }
+  .h2 { font-size: clamp(22px, 7vw, 26px); overflow-wrap: anywhere; }
+  .topbar__links a:nth-child(2) { display: none; }
+  .logo__name { font-size: 15px; }
+  .hero__btns { flex-direction: column; }
+  .consult__list { grid-template-columns: 1fr; }
+  .consult__list li + li { padding-left: 0; border-left: 0; }
+}

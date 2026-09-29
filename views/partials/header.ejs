@@ -13,8 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css?v=<%= v %>">
+  <link rel="stylesheet" href="/css/premium.css?v=<%= v %>">
 </head>
-<body>
+<body data-ai-surface="public-site" data-ai-contract="fixica-v1">
 <div class="topbar">
   <div class="container topbar__row">
     <span class="topbar__status"><i class="pulse"></i> <%= pages.topbarStatus %></span>
@@ -41,7 +42,7 @@
               <% cat.menuItems.forEach(function (i) { %>
                 <a href="/<%= cat.slug %>/<%= i.slug %>/"><%- include('icon', { name: i.icon }) %><span><%= i.menu %></span></a>
               <% }) %>
-              <a class="drop__more" href="/<%= cat.slug %>/">Ещё! Все направления →</a>
+              <a class="drop__more" href="/<%= cat.slug %>/">Все направления</a>
             </div>
           </li>
         <% }) %>
@@ -70,9 +71,9 @@
 
     <div class="header__actions">
       <a class="max-link" href="<%= site.max.href %>" target="_blank" rel="noopener" title="Написать в MAX" aria-label="Написать в MAX"><%- include('max') %></a>
-      <button class="btn btn--acc btn--sm header__cta" data-modal-open="lead">Заявка</button>
+      <button class="btn btn--acc btn--sm header__cta" data-modal-open="lead" data-ai-action="open-lead">Обсудить задачу</button>
       <button class="burger" aria-label="Меню" aria-expanded="false" data-burger><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-<main>
+<main data-ai-main>

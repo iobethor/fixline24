@@ -6,9 +6,9 @@
     "suffix": ""
   },
   "brandSub": "сервисная служба",
-  "logo": "/img/brand/logo.png",
+  "logo": "/img/brand/logo-gold.png",
   "logoWithText": false,
-  "favicon": "/img/brand/icon.png",
+  "favicon": "/img/brand/icon-gold.png",
   "tagline": "Сервисная служба для ИТ и интерактивного оборудования по всей России",
   "phone": "8 (800) 301-32-98",
   "email": "sales@fixica.pro",
@@ -72,5 +72,6 @@
     }
   ],
   "legalName": "ООО «Айти Фикс Сервис»",
-  "heroImage": "/img/hero.webp"
+  "heroImage": "/img/editorial/hero-premium.webp",
+  "emailExtra": "sales@super-fast.ru"
 }

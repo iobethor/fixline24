@@ -4,7 +4,7 @@
   // ---------- подписи полей ----------
   var LABELS = {
     name: 'Название', title: 'Заголовок', titleAccent: 'Заголовок — выделенная часть', titleEnd: 'Заголовок — окончание',
-    tagline: 'Слоган', phone: 'Телефон', phoneHref: 'Ссылка телефона', email: 'E-mail', address: 'Адрес',
+    tagline: 'Слоган', phone: 'Телефон', phoneHref: 'Ссылка телефона', email: 'E-mail', emailExtra: 'Дополнительный e-mail (в реквизитах)', address: 'Адрес',
     schedule: 'График работы', max: 'Мессенджер MAX', href: 'Ссылка', copyright: 'Копирайт',
     brand: 'Логотип — текст', main: 'Основная часть', accent: 'Выделенная часть', suffix: 'Индекс',
     brandSub: 'Подпись под логотипом', legalName: 'Юридическое лицо (показывается в подвале)', heroImage: 'Фон баннера на главной', logo: 'Логотип (картинка): /img/brand/logo.png — зелёный, /img/brand/logo-gold.png — золотой', logoWithText: 'Показывать текст рядом с картинкой логотипа',

@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<section class="hero">
+<section class="hero" data-ai-section="hero">
   <% if (site.heroVideo && site.heroVideo.src) { %>
     <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="<%= site.heroVideo.poster || '' %>">
       <source src="<%= site.heroVideo.src %>" type="video/mp4">
@@ -16,7 +16,7 @@
       <h1 class="hero__title"><%= home.hero.title %> <em><%= home.hero.titleAccent %></em> <%= home.hero.titleEnd %></h1>
       <p class="hero__lead"><%= home.hero.lead %></p>
       <div class="hero__btns">
-        <button class="btn btn--acc" data-modal-open="lead"><%= home.hero.buttonMain %> <span aria-hidden="true">→</span></button>
+        <button class="btn btn--acc" data-modal-open="lead" data-ai-action="open-lead"><%= home.hero.buttonMain %></button>
         <a class="btn btn--line" href="/uslugi/"><%= home.hero.buttonSecond %></a>
       </div>
     </div>
@@ -29,14 +29,40 @@
   <div class="container">
     <div class="hero__dirs">
       <% nav.services.forEach(function (cat, n) { %>
-        <a class="hero__dir" href="/<%= cat.slug %>/"><small>0<%= n + 1 %></small><span><%= cat.title %></span><i>→</i></a>
+        <a class="hero__dir" href="/<%= cat.slug %>/"><small>0<%= n + 1 %></small><span><%= cat.title %></span><i aria-hidden="true">+</i></a>
       <% }) %>
-      <a class="hero__dir" href="/portfolio/"><small>04</small><span>Портфолио</span><i>→</i></a>
+      <a class="hero__dir" href="/portfolio/"><small>04</small><span>Портфолио</span><i aria-hidden="true">+</i></a>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section expertise" data-ai-section="core-services">
+  <div class="container">
+    <div class="section__head section__head--intro">
+      <div>
+        <p class="eyebrow">Ключевая экспертиза</p>
+        <h2 class="h2">Один подрядчик.<br>Полный цикл работ.</h2>
+      </div>
+      <p class="section-intro">От аудита и монтажа до круглосуточного сервиса. Работаем с распределённой инфраструктурой и единичными объектами по всей России.</p>
+    </div>
+    <div class="expertise__grid">
+      <% const editorial = ['/img/editorial/hero-premium.webp', '/img/editorial/montage-premium.webp', '/img/editorial/diagnostics-premium.webp']; %>
+      <% nav.services.forEach(function (cat, n) { %>
+        <a class="expertise-card" href="/<%= cat.slug %>/" data-ai-entity="service-category" data-ai-slug="<%= cat.slug %>">
+          <span class="expertise-card__media"><img src="<%= editorial[n] %>" alt="<%= cat.title %>" loading="<%= n === 0 ? 'eager' : 'lazy' %>"></span>
+          <span class="expertise-card__body">
+            <small>0<%= n + 1 %></small>
+            <strong><%= cat.title %></strong>
+            <span><%= cat.lead %></span>
+            <b>Смотреть направления</b>
+          </span>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-ai-section="components">
   <div class="container">
     <div class="section__head">
       <div>
@@ -53,14 +79,14 @@
         <a class="part-card" href="<%= c.href %>">
           <span class="part-card__img part-card__img--icon"><%- include('partials/icon', { name: c.icon || 'more' }) %></span>
           <span class="part-card__name"><%= c.title %></span>
-          <span class="part-card__link"><%= c.items.length %> товаров →</span>
+          <span class="part-card__link"><%= c.items.length %> товаров</span>
         </a>
       <% }) %>
     </div>
   </div>
 </section>
 
-<section class="section section--dark popular">
+<section class="section section--dark popular" data-ai-section="popular-services">
   <div class="container">
     <div class="section__head">
       <div>
@@ -78,7 +104,7 @@
           <span class="pop-card__img"><img src="<%= p.img %>" alt="<%= p.kind %> <%= p.name %>" loading="lazy"></span>
           <span class="pop-card__kind"><%= p.kind %></span>
           <span class="pop-card__name"><%= p.name %></span>
-          <span class="pop-card__go">Подробнее →</span>
+          <span class="pop-card__go">Подробнее</span>
         </a>
       <% }) %>
     </div>
@@ -92,7 +118,7 @@
         <p class="eyebrow"><%= home.sections.portfolio.eyebrow %></p>
         <h2 class="h2"><%= home.sections.portfolio.title %></h2>
       </div>
-      <a class="btn btn--line btn--sm" href="/portfolio/">Все проекты →</a>
+      <a class="btn btn--line btn--sm" href="/portfolio/">Все проекты</a>
     </div>
     <div class="tiles">
       <% projects.slice(0, 7).forEach(function (p, n) { %>
@@ -106,7 +132,7 @@
       <% }) %>
       <a class="tile tile--all" href="/portfolio/">
         <span class="tile__all-num"><%= projects.length %></span>
-        <span class="tile__all-text">Смотрите всё →</span>
+        <span class="tile__all-text">Смотреть все проекты</span>
       </a>
     </div>
   </div>
@@ -188,7 +214,7 @@
         <p class="eyebrow"><%= home.sections.news.eyebrow %></p>
         <h2 class="h2"><%= home.sections.news.title %></h2>
       </div>
-      <a class="btn btn--line btn--sm" href="/novosti/">Больше новостей →</a>
+      <a class="btn btn--line btn--sm" href="/novosti/">Больше новостей</a>
     </div>
     <div class="cards3">
       <% news.slice(0, 3).forEach(function (n) { %><%- include('partials/news-card', { n: n }) %><% }) %>

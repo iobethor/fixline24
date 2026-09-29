@@ -1,4 +1,4 @@
-<form class="lead-form" data-lead-form novalidate>
+<form class="lead-form" data-lead-form data-ai-form="lead" novalidate>
   <input type="hidden" name="source" value="<%= source %>">
   <label class="field">
     <span>Имя</span>
@@ -16,6 +16,6 @@
     <input type="checkbox" name="agree" required>
     <span>Принимаю <a href="/politika-konfidencialnosti/" target="_blank">политику обработки персональных данных</a></span>
   </label>
-  <button class="btn btn--acc btn--block" type="submit">Отправить заявку <span aria-hidden="true">→</span></button>
+  <button class="btn btn--acc btn--block" type="submit">Отправить заявку</button>
   <p class="lead-form__status" data-status role="status"></p>
 </form>

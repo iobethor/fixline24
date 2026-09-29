@@ -1,18 +1,18 @@
 {
-  "name": "FIXLINE 24",
+  "name": "Фиксика",
   "brand": {
-    "main": "FIX",
-    "accent": "LINE",
-    "suffix": "24"
+    "main": "фикс",
+    "accent": "ика",
+    "suffix": ""
   },
   "brandSub": "сервисная служба",
-  "logo": "",
+  "logo": "/img/brand/logo.png",
   "logoWithText": false,
-  "favicon": "",
+  "favicon": "/img/brand/icon.png",
   "tagline": "Сервисная служба для ИТ и интерактивного оборудования по всей России",
-  "phone": "+7 980 391-09-91",
-  "email": "sales@super-fast.ru",
-  "address": "",
+  "phone": "8 (800) 301-32-98",
+  "email": "sales@fixica.pro",
+  "address": "115054, Москва, Озерковская наб., д. 48-50, стр. 3, помещ. 5/п",
   "schedule": [
     "Сервис — круглосуточно",
     "Обработка заявок ПН–ПТ с 09:00 до 18:00 по Мск"
@@ -21,7 +21,7 @@
     "phone": "+7 980 391-09-91",
     "href": "https://max.ru/+79803910991"
   },
-  "copyright": "© 2024–2026 Все права защищены",
+  "copyright": "© 2024–2026 ООО «Айти Фикс Сервис». Все права защищены",
   "heroVideo": {
     "src": "",
     "poster": ""
@@ -70,5 +70,7 @@
       "label": "заявок выполняем ежедневно",
       "grows": true
     }
-  ]
+  ],
+  "legalName": "ООО «Айти Фикс Сервис»",
+  "heroImage": "/img/hero.webp"
 }

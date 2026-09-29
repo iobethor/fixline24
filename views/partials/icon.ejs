@@ -18,6 +18,13 @@ const paths = {
   pylon: '<rect x="15" y="3" width="18" height="36" rx="2"/><rect x="18" y="7" width="12" height="24" rx="1"/><path d="M12 44h24M20 39v5M28 39v5"/><path d="M22 16l5 3-5 3z"/>',
   street: '<path d="M6 42h36"/><rect x="16" y="6" width="16" height="26" rx="2"/><rect x="19" y="9" width="10" height="14" rx="1"/><path d="M20 32v10M28 32v10"/><path d="M38 14c2 2 2 6 0 8M41 11c4 4 4 10 0 14"/>',
   busstop: '<path d="M4 12h40l-4-6H8z"/><path d="M8 12v30M40 12v30M4 42h40"/><rect x="14" y="16" width="12" height="16" rx="1"/><path d="M30 34h8M30 30h8"/><path d="M32 18l2-3 2 3-2 3z"/>',
+  frame: '<rect x="5" y="10" width="38" height="28" rx="2"/><rect x="9" y="14" width="30" height="20" rx="1" stroke-dasharray="2 3"/><circle cx="12" cy="17" r="1"/><circle cx="36" cy="17" r="1"/><circle cx="12" cy="31" r="1"/><circle cx="36" cy="31" r="1"/><path d="M24 4v4M20 42h8"/>',
+  glass: '<rect x="7" y="7" width="34" height="34" rx="3"/><path d="M14 7v34M24 7v34M34 7v34M7 15h34M7 24h34M7 33h34" opacity=".45"/><path d="M41 34l4 8h-9" fill="none"/>',
+  film: '<path d="M14 8h28v32H14z"/><path d="M14 8c-5 0-8 3-8 7v18c0-4 3-7 8-7"/><path d="M20 15h16M20 22h16M20 29h16" opacity=".5"/>',
+  chip: '<rect x="12" y="12" width="24" height="24" rx="2"/><rect x="19" y="19" width="10" height="10" rx="1"/><path d="M18 12V6M24 12V6M30 12V6M18 42v-6M24 42v-6M30 42v-6M12 18H6M12 24H6M12 30H6M42 18h-6M42 24h-6M42 30h-6"/>',
+  bill: '<rect x="8" y="16" width="32" height="20" rx="2"/><circle cx="24" cy="26" r="5"/><path d="M14 10h20M16 5h16"/><path d="M13 22v8M35 22v8" opacity=".5"/>',
+  printer: '<path d="M14 18V6h20v12"/><rect x="7" y="18" width="34" height="14" rx="2"/><path d="M14 32h20v10H14z"/><path d="M18 36h12M18 39h8" opacity=".6"/><circle cx="35" cy="24" r="1.5"/>',
+  scanner: '<path d="M10 14V8h6M38 14V8h-6M10 34v6h6M38 34v6h-6"/><path d="M6 24h36"/><path d="M16 18v12M21 18v12M26 18v12M31 18v12" opacity=".5"/>',
   more: '<circle cx="12" cy="24" r="3"/><circle cx="24" cy="24" r="3"/><circle cx="36" cy="24" r="3"/>'
 };
 %><svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><%- paths[name] || paths.more %></svg>

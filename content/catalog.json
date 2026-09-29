@@ -9,47 +9,56 @@
         {
           "slug": "lcd-matricy",
           "title": "LCD матрицы",
-          "lead": "Матрицы TFT-LCD и LCD-панели с блоком питания для киосков, панелей и видеостен."
+          "lead": "Матрицы TFT-LCD и LCD-панели с блоком питания для киосков, панелей и видеостен.",
+          "icon": "panel"
         },
         {
           "slug": "ulichnye-lcd-matricy",
           "title": "Уличные LCD матрицы повышенной яркости",
-          "lead": "Матрицы 2000–4000 кд/м² — изображение читается даже под прямым солнцем."
+          "lead": "Матрицы 2000–4000 кд/м² — изображение читается даже под прямым солнцем.",
+          "icon": "led"
         },
         {
           "slug": "ik-ramki",
           "title": "Сенсорные инфракрасные рамки",
-          "lead": "Мультитач ИК-рамки от 19″ до 98″ на 10 касаний."
+          "lead": "Мультитач ИК-рамки от 19″ до 98″ на 10 касаний.",
+          "icon": "frame"
         },
         {
           "slug": "pcap-stekla",
           "title": "Проекционно-ёмкостные стёкла (PCAP)",
-          "lead": "PCAP-стёкла 17–86″ для киосков, терминалов и столов."
+          "lead": "PCAP-стёкла 17–86″ для киосков, терминалов и столов.",
+          "icon": "glass"
         },
         {
           "slug": "sensornye-plenki",
           "title": "Сенсорные плёнки",
-          "lead": "Проекционно-ёмкостные плёнки: превращают любой экран или витрину в сенсорные."
+          "lead": "Проекционно-ёмкостные плёнки: превращают любой экран или витрину в сенсорные.",
+          "icon": "film"
         },
         {
           "slug": "ops-kompyutery",
           "title": "OPS компьютеры",
-          "lead": "Встраиваемые OPS-компьютеры для интерактивных панелей."
+          "lead": "Встраиваемые OPS-компьютеры для интерактивных панелей.",
+          "icon": "chip"
         },
         {
           "slug": "kupyuropriemniki",
           "title": "Купюроприёмники",
-          "lead": "Купюроприёмники для платёжных терминалов и касс самообслуживания."
+          "lead": "Купюроприёмники для платёжных терминалов и касс самообслуживания.",
+          "icon": "bill"
         },
         {
           "slug": "termoprintery",
           "title": "Термопринтеры",
-          "lead": "Киосковые термопринтеры чеков и принтеры этикеток."
+          "lead": "Киосковые термопринтеры чеков и принтеры этикеток.",
+          "icon": "printer"
         },
         {
           "slug": "skanery",
           "title": "Сканеры штрихкодов и QR-кодов",
-          "lead": "Встраиваемые 1D/2D-сканеры для терминалов и касс."
+          "lead": "Встраиваемые 1D/2D-сканеры для терминалов и касс.",
+          "icon": "scanner"
         }
       ]
     },
@@ -62,32 +71,38 @@
         {
           "slug": "interaktivnye-paneli",
           "title": "Интерактивные панели",
-          "lead": "T-Con, скалеры, Android-платы, блоки питания, матрицы и сенсорные рамки."
+          "lead": "T-Con, скалеры, Android-платы, блоки питания, матрицы и сенсорные рамки.",
+          "icon": "panel"
         },
         {
           "slug": "sensornye-terminaly",
           "title": "Сенсорные терминалы",
-          "lead": "Сенсорные стёкла и рамки, антивандальные клавиатуры, принтеры и сканеры."
+          "lead": "Сенсорные стёкла и рамки, антивандальные клавиатуры, принтеры и сканеры.",
+          "icon": "kiosk"
         },
         {
           "slug": "platezhnye-terminaly",
           "title": "Платёжные терминалы",
-          "lead": "Пин-пады, картридеры и купюроприёмники."
+          "lead": "Пин-пады, картридеры и купюроприёмники.",
+          "icon": "payment"
         },
         {
           "slug": "svetodiodnye-ekrany",
           "title": "Светодиодные экраны",
-          "lead": "Уличные дисплеи повышенной яркости и блоки питания."
+          "lead": "Уличные дисплеи повышенной яркости и блоки питания.",
+          "icon": "led"
         },
         {
           "slug": "kompyuternaya-tehnika",
           "title": "Компьютерная техника",
-          "lead": "Встраиваемые компьютеры и комплектующие."
+          "lead": "Встраиваемые компьютеры и комплектующие.",
+          "icon": "chip"
         },
         {
           "slug": "videosteny",
           "title": "Видеостены",
-          "lead": "Матрицы и LCD-панели для ремонта и расширения видеостен."
+          "lead": "Матрицы и LCD-панели для ремонта и расширения видеостен.",
+          "icon": "videowall"
         }
       ]
     }
@@ -171,10 +186,7 @@
           "Вертикальное, горизонтальное"
         ]
       ],
-      "images": [
-        "/img/catalog/matricza-19-0.webp",
-        "/img/catalog/matricza-19-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -254,10 +266,7 @@
           "В помещении"
         ]
       ],
-      "images": [
-        "/img/catalog/215-lcd-panel-psu-with-cable-0.webp",
-        "/img/catalog/215-lcd-panel-psu-with-cable-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -329,10 +338,7 @@
           "0…+50 °C"
         ]
       ],
-      "images": [
-        "/img/catalog/23-6-lcd-panel-psu-with-cable-0.webp",
-        "/img/catalog/23-6-lcd-panel-psu-with-cable-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -416,11 +422,7 @@
           "18 Вт (Led); 3.2-5.3 Вт (панель)"
         ]
       ],
-      "images": [
-        "/img/catalog/27-lcd-panel-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/27-lcd-panel-psu-with-cable-500-kd-m2-1.webp",
-        "/img/catalog/27-lcd-panel-psu-with-cable-500-kd-m2-2.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -544,11 +546,7 @@
           "12V7A"
         ]
       ],
-      "images": [
-        "/img/catalog/27-lcd-panel-psu-with-cable-700-kd-m2-0.webp",
-        "/img/catalog/27-lcd-panel-psu-with-cable-700-kd-m2-1.webp",
-        "/img/catalog/27-lcd-panel-psu-with-cable-700-kd-m2-2.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -660,11 +658,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/27-lcd-panel-psu-with-cable-2000-kd-m2-0.webp",
-        "/img/catalog/27-lcd-panel-psu-with-cable-2000-kd-m2-1.webp",
-        "/img/catalog/27-lcd-panel-psu-with-cable-2000-kd-m2-2.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -744,10 +738,7 @@
           "10…90%"
         ]
       ],
-      "images": [
-        "/img/catalog/32-lcd-panel-psu-with-cable-0.webp",
-        "/img/catalog/32-lcd-panel-psu-with-cable-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -831,10 +822,7 @@
           "-20`+50 `C"
         ]
       ],
-      "images": [
-        "/img/catalog/32-lcd-panel-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/32-lcd-panel-psu-with-cable-500-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -910,10 +898,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/32-lcd-panel-psu-with-cable-700-kd-m2-0.webp",
-        "/img/catalog/32-lcd-panel-psu-with-cable-700-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -1025,10 +1010,7 @@
           "матрица TFT-LCD;"
         ]
       ],
-      "images": [
-        "/img/catalog/32-lcd-panel-psu-with-cable-2000-kd-m2-0.webp",
-        "/img/catalog/32-lcd-panel-psu-with-cable-2000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -1108,10 +1090,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/43-lcd-panel-4k-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/43-lcd-panel-4k-psu-with-cable-500-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -1233,10 +1212,7 @@
           "10…90%"
         ]
       ],
-      "images": [
-        "/img/catalog/43-lcd-panel-4k-psu-with-cable-700-kd-m2-0.webp",
-        "/img/catalog/43-lcd-panel-4k-psu-with-cable-700-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -1358,10 +1334,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/43-lcd-panel-4k-psu-with-cable-2000-kd-m2-0.webp",
-        "/img/catalog/43-lcd-panel-4k-psu-with-cable-2000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -1437,10 +1410,7 @@
           "5~90%"
         ]
       ],
-      "images": [
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-350-kd-m2-0.webp",
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-350-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -1526,10 +1496,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-500-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -1643,10 +1610,7 @@
           "12V100W – 1шт., 24V350W – 1шт."
         ]
       ],
-      "images": [
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-700-kd-m2-0.webp",
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-700-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -1772,10 +1736,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-2000-kd-m2-0.webp",
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-2000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -1911,10 +1872,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-3000-kd-m2-0.webp",
-        "/img/catalog/49-lcd-panel-4k-psu-with-cable-3000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -1990,10 +1948,7 @@
           "-20`+50 `C"
         ]
       ],
-      "images": [
-        "/img/catalog/50-lcd-panel-4k-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/50-lcd-panel-4k-psu-with-cable-500-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -2075,10 +2030,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-350-kd-m2-0.webp",
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-350-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -2152,10 +2104,7 @@
           "Вертикальное, горизонтальное"
         ]
       ],
-      "images": [
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-500-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -2277,10 +2226,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-700-kd-m2-0.webp",
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-700-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -2410,10 +2356,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-1000-kd-m2-0.webp",
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-1000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -2541,10 +2484,7 @@
           "Глянцевая, матовая"
         ]
       ],
-      "images": [
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-2000-kd-m2-0.webp",
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-2000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -2656,10 +2596,7 @@
           "18"
         ]
       ],
-      "images": [
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-4000-kd-m2-0.webp",
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-4000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -2739,10 +2676,7 @@
           "10…90%"
         ]
       ],
-      "images": [
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-350-kd-m2-0.webp",
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-350-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -2824,10 +2758,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-500-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -2949,10 +2880,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-700-kd-m2-0.webp",
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-700-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -3090,10 +3018,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-1000-kd-m2-0.webp",
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-1000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -3221,10 +3146,7 @@
           "<9мс"
         ]
       ],
-      "images": [
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-2000-kd-m2-0.webp",
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-2000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -3340,10 +3262,7 @@
           "10~90%"
         ]
       ],
-      "images": [
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-500-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -3463,10 +3382,7 @@
           "10~90%"
         ]
       ],
-      "images": [
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-700-kd-m2-0.webp",
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-700-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -3586,10 +3502,7 @@
           "<9мс"
         ]
       ],
-      "images": [
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-1000-kd-m2-0.webp",
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-1000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -3713,10 +3626,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-2000-kd-m2-0.webp",
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-2000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -3820,10 +3730,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-500-kd-m2-0.webp",
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-500-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -3943,10 +3850,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-700-kd-m2-0.webp",
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-700-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -4074,10 +3978,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-1000-kd-m2-0.webp",
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-1000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -4213,10 +4114,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-2000-kd-m2-0.webp",
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-2000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -4344,10 +4242,7 @@
           "5~90%"
         ]
       ],
-      "images": [
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-3000-kd-m2-0.webp",
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-3000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -4479,10 +4374,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-4000-kd-m2-0.webp",
-        "/img/catalog/86-lcd-panel-4k-psu-with-cable-4000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -4493,9 +4385,7 @@
       "title": "T-Con DCBDU-C196A_17",
       "text": "Совместим с интерактивными панелями 55″, 65″, 75″, 86″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/t-con-dcbdu-c196a17-2-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli"
@@ -4506,9 +4396,7 @@
       "title": "T-Con DCBDU-C196A_17",
       "text": "Совместим с интерактивными панелями 75″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/t-con-dcbdu-c196a17-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli"
@@ -4519,9 +4407,7 @@
       "title": "T-Con TD-0006",
       "text": "Совместим с интерактивными панелями 65″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/t-con-td-0006-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli"
@@ -4532,9 +4418,7 @@
       "title": "Андроид BSD.V100S",
       "text": "Совместим с интерактивными панелями 55″, 65″, 75″, 86″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/android-bsd-v100s-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli"
@@ -4545,9 +4429,7 @@
       "title": "Андроид DZ-982LTVEJ-GD0ALNOVW-V2.0",
       "text": "Совместим с интерактивными панелями 55″, 65″, 75″, 86″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/android-dz-982ltvej-gd0alnovw-v2-0-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli"
@@ -4558,9 +4440,7 @@
       "title": "Блок питания (вторичный) MP50A",
       "text": "Совместим с интерактивными панелями 55″, 65″, 75″, 86″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/blok-pitaniyavtorichnyj-mp50a-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli",
@@ -4572,9 +4452,7 @@
       "title": "Блок питания MP361S-C2",
       "text": "Совместим с интерактивными панелями 75″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/blok-pitaniya-mp361s-c2-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli",
@@ -4586,9 +4464,7 @@
       "title": "Блок питания MP3306L",
       "text": "Совместим с интерактивными панелями 65″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/blok-pitaniya-mp3306l-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli",
@@ -4600,9 +4476,7 @@
       "title": "Блок питания ZW9550",
       "text": "Совместим с интерактивными панелями 86″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/blok-pitaniya-zw9550-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli",
@@ -4614,9 +4488,7 @@
       "title": "Блок питания ZW9410-A",
       "text": "Совместим с интерактивными панелями 65″, 75″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/blok-pitaniya-zw9410-a-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli",
@@ -4677,10 +4549,7 @@
           "4,5 GHz"
         ]
       ],
-      "images": [
-        "/img/catalog/ops-kompyuter-i5-10500-4-128-0.webp",
-        "/img/catalog/ops-kompyuter-i5-10500-4-128-1.webp"
-      ],
+      "images": [],
       "components": [
         "ops-kompyutery"
       ],
@@ -4758,11 +4627,7 @@
           "OPS JAE 80-pin DC IN разъем 12-19V 2.5/5.5*1"
         ]
       ],
-      "images": [
-        "/img/catalog/ops-kompyuter-i5-11400-4-128-0.webp",
-        "/img/catalog/ops-kompyuter-i5-11400-4-128-1.webp",
-        "/img/catalog/ops-kompyuter-i5-11400-4-128-2.webp"
-      ],
+      "images": [],
       "components": [
         "ops-kompyutery"
       ],
@@ -4836,11 +4701,7 @@
           "80-pin 1 x HDMI 2.0,4К 60Гц"
         ]
       ],
-      "images": [
-        "/img/catalog/ops-kompyuter-i7-10700-4-128-0.webp",
-        "/img/catalog/ops-kompyuter-i7-10700-4-128-1.webp",
-        "/img/catalog/ops-kompyuter-i7-10700-4-128-2.webp"
-      ],
+      "images": [],
       "components": [
         "ops-kompyutery"
       ],
@@ -4874,10 +4735,7 @@
           "27*23*9см"
         ]
       ],
-      "images": [
-        "/img/catalog/ops-kompyuter-i7-11700-4-128-0.webp",
-        "/img/catalog/ops-kompyuter-i7-11700-4-128-1.webp"
-      ],
+      "images": [],
       "components": [
         "ops-kompyutery"
       ],
@@ -4943,9 +4801,7 @@
           "Intel® i3-8100 3,6 GHz, кэш 6Mb"
         ]
       ],
-      "images": [
-        "/img/catalog/vstraivaemyj-ops-kompyuter-i3-8100-4-128-0.webp"
-      ],
+      "images": [],
       "components": [
         "ops-kompyutery"
       ],
@@ -5019,9 +4875,7 @@
           "Intel 3165, 802.11a/b/g/n/ac, Wi-fi"
         ]
       ],
-      "images": [
-        "/img/catalog/ops-kompyuter-i3-10100-4-128-0.webp"
-      ],
+      "images": [],
       "components": [
         "ops-kompyutery"
       ],
@@ -5059,9 +4913,7 @@
           "Интегрированное стерео аудио высокой четкости"
         ]
       ],
-      "images": [
-        "/img/catalog/ops-kompyuter-i5-8500-4-128-0.webp"
-      ],
+      "images": [],
       "components": [
         "ops-kompyutery"
       ],
@@ -5115,9 +4967,7 @@
           "SSD 128 gb"
         ]
       ],
-      "images": [
-        "/img/catalog/ops-kompyuter-i3-12100-4-128-0.webp"
-      ],
+      "images": [],
       "components": [
         "ops-kompyutery"
       ],
@@ -5223,9 +5073,7 @@
           "Windows 7 Premium и выше, Linux с ядром 3.0 и выше, Android, MacOS"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-238-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -5325,9 +5173,7 @@
           "Windows 7 Premium и выше, Linux с ядром 3.0 и выше, Android, MacOS"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-24-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -5407,9 +5253,7 @@
           "Windows 7 Premium и выше, Linux с ядром 3.0 и выше, Android, MacOS"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-27-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -5509,9 +5353,7 @@
           "10…90%"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-32-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -5607,9 +5449,7 @@
           "Windows 7 Premium и выше, Linux с ядром 3.0 и выше, Android, MacOS"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-40-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -5709,9 +5549,7 @@
           "Windows 7 Pro и выше, Linux с ядром 3.0 и выше, Android, MacOS"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-42-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -5807,9 +5645,7 @@
           "10…90%"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-43-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -5909,9 +5745,7 @@
           "USB-порт"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-48-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6007,9 +5841,7 @@
           "Windows 7 Pro и выше, Linux с ядром 3.0 и выше"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-55-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6115,9 +5947,7 @@
           "Windows 7 Premium и выше, Linux с ядром 3.0 и выше, Android, MacOS"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-60-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6219,9 +6049,7 @@
           "Windows 7 Premium и выше, Linux с ядром 3.0 и выше, Android, MacOS"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-65-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6323,9 +6151,7 @@
           "Windows 7 Pro и выше, Linux с ядром 3.0 и выше"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-70-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6427,9 +6253,7 @@
           "Windows 7 Pro и выше, Linux с ядром 3.0 и выше"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-75-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6527,9 +6351,7 @@
           "10 мс"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-86-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6635,9 +6457,7 @@
           "1253,9"
         ]
       ],
-      "images": [
-        "/img/catalog/infrakrasnaya-sensornaya-ramka-multitach-98-na-10-kasanij-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6699,9 +6519,7 @@
           "1 мм"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-ik-ramka-so-steklom-19-169-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6763,9 +6581,7 @@
           "USB"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-ik-ramka-so-steklom-215169-0.webp"
-      ],
+      "images": [],
       "components": [
         "ik-ramki"
       ],
@@ -6778,9 +6594,7 @@
       "title": "Конвертер VGA->HDMI VGA-TO-HDMI-V10",
       "text": "Совместим с интерактивными панелями 55″, 65″, 75″, 86″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/konverter-vga-hdmi-vga-to-hdmi-v10-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli"
@@ -6884,9 +6698,7 @@
           "5 шт"
         ]
       ],
-      "images": [
-        "/img/catalog/kupyuropriemnik-creator-c100-rub-0.webp"
-      ],
+      "images": [],
       "components": [
         "kupyuropriemniki"
       ],
@@ -6988,9 +6800,7 @@
           "3 б/сек"
         ]
       ],
-      "images": [
-        "/img/catalog/kupyuropriemnik-creator-c100-rub-2-0.webp"
-      ],
+      "images": [],
       "components": [
         "kupyuropriemniki"
       ],
@@ -7084,9 +6894,7 @@
           "SSP, ccTalk, GDS"
         ]
       ],
-      "images": [
-        "/img/catalog/kupyuropriemnik-itl-nv200-spectral-s-kassetoj-na-1000-kupyur-0.webp"
-      ],
+      "images": [],
       "components": [
         "kupyuropriemniki"
       ],
@@ -7188,10 +6996,7 @@
           "Плоский прямоугольник"
         ]
       ],
-      "images": [
-        "/img/catalog/matricza-55-0.webp",
-        "/img/catalog/matricza-55-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -7290,10 +7095,7 @@
           "Плоский прямоугольник"
         ]
       ],
-      "images": [
-        "/img/catalog/matricza-65-0.webp",
-        "/img/catalog/matricza-65-1.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -7380,11 +7182,7 @@
           "Плоский прямоугольник"
         ]
       ],
-      "images": [
-        "/img/catalog/matricza-75-0.webp",
-        "/img/catalog/matricza-75-1.webp",
-        "/img/catalog/matricza-75-2.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -7479,9 +7277,7 @@
           "3840×2160"
         ]
       ],
-      "images": [
-        "/img/catalog/matricza-86-0.webp"
-      ],
+      "images": [],
       "components": [
         "lcd-matricy"
       ],
@@ -7584,9 +7380,7 @@
           "лазерная гравировка с применением стойкой краски"
         ]
       ],
-      "images": [
-        "/img/catalog/metallicheskaya-antivandalnaya-czifrovaya-klaviatura-tg2160-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "sensornye-terminaly"
@@ -7674,9 +7468,7 @@
           "21 мм"
         ]
       ],
-      "images": [
-        "/img/catalog/metallicheskaya-antivandalnaya-czifrovaya-klaviatura-tg2100-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "sensornye-terminaly"
@@ -7788,9 +7580,7 @@
           "IP65 (пыле- влагозащищенная рабочая панель)"
         ]
       ],
-      "images": [
-        "/img/catalog/antivandalnaya-metallicheskaya-vstraivaemaya-klaviatura-tg-pc-d-s-trekbolom-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "sensornye-terminaly"
@@ -7870,9 +7660,7 @@
           "16 шт"
         ]
       ],
-      "images": [
-        "/img/catalog/pin-pad-szzt-596f-pci-3-0-kriptovannyj-nf0-h21-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "platezhnye-terminaly"
@@ -7944,9 +7732,7 @@
           "16 шт"
         ]
       ],
-      "images": [
-        "/img/catalog/pin-pad-szzt-588f-pci-5-0-f126-f40-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "platezhnye-terminaly"
@@ -8026,9 +7812,7 @@
           "2-е планки по 4-е клавиши"
         ]
       ],
-      "images": [
-        "/img/catalog/pin-pad-szzt-598l5-pci-5-0-kriptovannyj-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "platezhnye-terminaly"
@@ -8168,10 +7952,7 @@
           "26.33/26.33/24.93/24.85"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-17-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-17-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -8317,10 +8098,7 @@
           "21.3/26.3/19.65/19.65"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-19-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-19-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -8466,10 +8244,7 @@
           "2,5 мс"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-215-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-215-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -8615,10 +8390,7 @@
           "200"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-24-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-24-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -8768,10 +8540,7 @@
           "Закаленное стекло 3,9 ±0.3мм"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-27-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-27-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -8921,10 +8690,7 @@
           "Закаленное стекло 3,9 ±0.3мм"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-32-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-32-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -9070,10 +8836,7 @@
           "200"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-43-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-43-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -9205,10 +8968,7 @@
           "2,5 мс"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-55-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-55-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -9344,10 +9104,7 @@
           "20～85%"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-65-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-65-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -9487,10 +9244,7 @@
           "40..70 %"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-75-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-75-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -9626,10 +9380,7 @@
           "20～85%"
         ]
       ],
-      "images": [
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-86-0.webp",
-        "/img/catalog/proekczionno-yomkostnoe-steklo-pcap-86-1.webp"
-      ],
+      "images": [],
       "components": [
         "pcap-stekla"
       ],
@@ -9721,9 +9472,7 @@
           "170 мкм"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-19-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -9819,9 +9568,7 @@
           "автоматическая"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-24-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -9917,9 +9664,7 @@
           "5"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-27-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -10011,9 +9756,7 @@
           "от 1 до 12 мм"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-32-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -10109,9 +9852,7 @@
           "проекционно-емкостная P-Cap"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-43-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -10191,9 +9932,7 @@
           "10"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-55-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -10281,9 +10020,7 @@
           "5"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-65-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -10379,9 +10116,7 @@
           "5"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-75-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -10477,9 +10212,7 @@
           "5"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-86-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -10571,9 +10304,7 @@
           "5"
         ]
       ],
-      "images": [
-        "/img/catalog/sensornaya-plenka-98-0.webp"
-      ],
+      "images": [],
       "components": [
         "sensornye-plenki"
       ],
@@ -10584,9 +10315,7 @@
       "title": "Скалер BSD.TK5 V1.0",
       "text": "Совместим с интерактивными панелями 55″, 65″, 75″, 86″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/skaler-bsd-tk5-v1-0-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli"
@@ -10597,9 +10326,7 @@
       "title": "Скалер DZ-B-3683P-V2.1",
       "text": "Совместим с интерактивными панелями 55″, 65″, 75″, 86″. Точную совместимость с вашей моделью уточняйте у инженера.",
       "attrs": [],
-      "images": [
-        "/img/catalog/skaler-dz-b-3683p-v2-1-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "interaktivnye-paneli"
@@ -10675,11 +10402,7 @@
           "1.5м."
         ]
       ],
-      "images": [
-        "/img/catalog/skaner-shtrih-kod-2d-newland-usb-fm415-0.webp",
-        "/img/catalog/skaner-shtrih-kod-2d-newland-usb-fm415-1.webp",
-        "/img/catalog/skaner-shtrih-kod-2d-newland-usb-fm415-2.webp"
-      ],
+      "images": [],
       "components": [
         "skanery"
       ],
@@ -10769,11 +10492,7 @@
           "IP54"
         ]
       ],
-      "images": [
-        "/img/catalog/skaner-shtrih-kod-2d-newland-usb-0.webp",
-        "/img/catalog/skaner-shtrih-kod-2d-newland-usb-1.webp",
-        "/img/catalog/skaner-shtrih-kod-2d-newland-usb-2.webp"
-      ],
+      "images": [],
       "components": [
         "skanery"
       ],
@@ -10935,9 +10654,7 @@
           "кнопки и цветовая индикация"
         ]
       ],
-      "images": [
-        "/img/catalog/termoprinter-custom-vkp-80-v2-0.webp"
-      ],
+      "images": [],
       "components": [
         "termoprintery"
       ],
@@ -10999,9 +10716,7 @@
           "DC 24V/2.5A"
         ]
       ],
-      "images": [
-        "/img/catalog/termoprinter-ms-d347-tl-0.webp"
-      ],
+      "images": [],
       "components": [
         "termoprintery"
       ],
@@ -11043,9 +10758,7 @@
           "термопечать"
         ]
       ],
-      "images": [
-        "/img/catalog/termoprinter-npf2092d-0.webp"
-      ],
+      "images": [],
       "components": [
         "termoprintery"
       ],
@@ -11127,11 +10840,7 @@
           "199*144,5*127 мм"
         ]
       ],
-      "images": [
-        "/img/catalog/termoprinter-rego-rg-p80a-0.webp",
-        "/img/catalog/termoprinter-rego-rg-p80a-1.webp",
-        "/img/catalog/termoprinter-rego-rg-p80a-2.webp"
-      ],
+      "images": [],
       "components": [
         "termoprintery"
       ],
@@ -11273,9 +10982,7 @@
           "Да"
         ]
       ],
-      "images": [
-        "/img/catalog/termoprinter-snbc-a4-bk-l216ii-s-gorizontalnym-derzhatelem-0.webp"
-      ],
+      "images": [],
       "components": [
         "termoprintery"
       ],
@@ -11417,9 +11124,7 @@
           "Да"
         ]
       ],
-      "images": [
-        "/img/catalog/termoprinter-snbc-bk-s310-s-prezenterom-i-liczevoj-nakladkoj-0.webp"
-      ],
+      "images": [],
       "components": [
         "termoprintery"
       ],
@@ -11541,10 +11246,7 @@
           "Универсальный"
         ]
       ],
-      "images": [
-        "/img/catalog/32-lcd-panel-psu-with-cable-3000-kd-m2-0.webp",
-        "/img/catalog/32-lcd-panel-psu-with-cable-3000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -11674,10 +11376,7 @@
           "-20..+70"
         ]
       ],
-      "images": [
-        "/img/catalog/43-lcd-panel-4k-psu-with-cable-3000-kd-m2-0.webp",
-        "/img/catalog/43-lcd-panel-4k-psu-with-cable-3000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -11803,10 +11502,7 @@
           "12V100W – 1шт., 24V350W – 1шт."
         ]
       ],
-      "images": [
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-3000-kd-m2-0.webp",
-        "/img/catalog/55-lcd-panel-4k-psu-with-cable-3000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -11936,10 +11632,7 @@
           "12V100W – 1шт., 24V350W – 2шт."
         ]
       ],
-      "images": [
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-3000-kd-m2-0.webp",
-        "/img/catalog/65-lcd-panel-4k-psu-with-cable-3000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -12061,10 +11754,7 @@
           "Динамики опционально"
         ]
       ],
-      "images": [
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-3000-kd-m2-0.webp",
-        "/img/catalog/75-lcd-panel-4k-psu-with-cable-3000-kd-m2-1.webp"
-      ],
+      "images": [],
       "components": [
         "ulichnye-lcd-matricy"
       ],
@@ -12142,9 +11832,7 @@
           "Настольный"
         ]
       ],
-      "images": [
-        "/img/catalog/ustrojstvo-chteniya-smart-kart-acr1281u-c1-0.webp"
-      ],
+      "images": [],
       "components": [],
       "spare": [
         "platezhnye-terminaly"

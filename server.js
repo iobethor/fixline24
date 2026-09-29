@@ -26,7 +26,12 @@ app.locals.formatDate = iso => {
 
 app.use((req, res, next) => {
   const m = model();
-  const site = m.site;
+  // ?logo=gold — посмотреть золотой вариант логотипа, ?logo=green — зелёный (только просмотр, ничего не сохраняется)
+  let site = m.site;
+  if (req.query.logo === 'gold' || req.query.logo === 'green') {
+    const gold = req.query.logo === 'gold';
+    site = { ...site, logo: gold ? '/img/brand/logo-gold.png' : '/img/brand/logo.png', favicon: gold ? '/img/brand/icon-gold.png' : '/img/brand/icon.png' };
+  }
   // {{name}}, {{phone}}, {{email}}, {{address}} в текстах подставляются из общих настроек
   res.locals.fill = s => String(s == null ? '' : s).replace(/\{\{(\w+)\}\}/g, (_, k) => site[k] != null ? site[k] : '');
   res.locals.path = req.path;

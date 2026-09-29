@@ -9,15 +9,8 @@
 
 <section class="section section--tight">
   <div class="container product">
-    <div class="product__gallery" data-gallery>
-      <div class="product__main"><% if (product.images[0]) { %><img src="<%= product.images[0] %>" alt="<%= product.title %>" data-gallery-main><% } %></div>
-      <% if (product.images.length > 1) { %>
-        <div class="product__thumbs">
-          <% product.images.forEach(function (src, i) { %>
-            <button class="product__thumb<%= i === 0 ? ' is-active' : '' %>" data-gallery-thumb="<%= src %>" aria-label="Фото <%= i + 1 %>"><img src="<%= src %>" alt=""></button>
-          <% }) %>
-        </div>
-      <% } %>
+    <div class="product__gallery">
+      <div class="product__main product__main--icon"><%- include('partials/icon', { name: product.home.cat.icon || 'more' }) %></div>
     </div>
     <div class="product__info">
       <p class="eyebrow"><%= product.home.cat.title %></p>

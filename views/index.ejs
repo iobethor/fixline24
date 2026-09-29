@@ -6,6 +6,7 @@
       <source src="<%= site.heroVideo.src %>" type="video/mp4">
     </video>
   <% } else { %>
+    <% if (site.heroImage) { %><img class="hero__photo" src="<%= site.heroImage %>" alt="" fetchpriority="high"><% } %>
     <canvas class="hero__canvas" data-network aria-hidden="true"></canvas>
   <% } %>
   <div class="hero__grid" aria-hidden="true"></div>
@@ -50,7 +51,7 @@
     <div class="slider" data-slider="components">
       <% components.forEach(function (c) { %>
         <a class="part-card" href="<%= c.href %>">
-          <span class="part-card__img"><% if (c.img) { %><img src="<%= c.img %>" alt="<%= c.title %>" loading="lazy"><% } %></span>
+          <span class="part-card__img part-card__img--icon"><%- include('partials/icon', { name: c.icon || 'more' }) %></span>
           <span class="part-card__name"><%= c.title %></span>
           <span class="part-card__link"><%= c.items.length %> товаров →</span>
         </a>

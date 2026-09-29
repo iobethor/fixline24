@@ -13,7 +13,7 @@
     <div class="part-grid">
       <% sec.cats.forEach(function (c) { %>
         <a class="part-card" href="<%= c.href %>">
-          <span class="part-card__img"><% if (c.img) { %><img src="<%= c.img %>" alt="<%= c.title %>" loading="lazy"><% } %></span>
+          <span class="part-card__img part-card__img--icon"><%- include('partials/icon', { name: c.icon || 'more' }) %></span>
           <span class="part-card__name"><%= c.title %></span>
           <span class="part-card__link"><%= c.items.length %> товаров →</span>
         </a>

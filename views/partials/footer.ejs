@@ -4,6 +4,7 @@
     <div class="footer__top">
       <div class="footer__brand">
         <a href="/" class="logo logo--light"><%- include('logo') %></a>
+        <% if (site.legalName) { %><p class="footer__legal-name"><%= site.legalName %></p><% } %>
         <p class="footer__about"><%= site.tagline %>.</p>
         <div class="footer__legal">
           <a href="/politika-konfidencialnosti/">Политика конфиденциальности</a>
